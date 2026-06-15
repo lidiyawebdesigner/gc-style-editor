@@ -1,0 +1,10 @@
+{
+  "name": "gc-render-test",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Headless-рендер харнесс для gc-tester: 4 брейкпоинта, overflow, статус картинок, скриншоты",
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

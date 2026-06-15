@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "GetCourse Style Editor",
+  "version": "0.9.10",
+  "description": "Визуальный редактор стилей блоков GetCourse с библиотекой пресетов.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://*.getcourse.ru/*",
+    "*://university.zerocoder.ru/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.getcourse.ru/*",
+        "*://university.zerocoder.ru/*"
+      ],
+      "js": ["templates.js", "content.js"],
+      "css": ["sidebar.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
